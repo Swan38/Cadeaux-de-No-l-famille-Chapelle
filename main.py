@@ -54,17 +54,15 @@ while all(map(lambda possible_score: possible_score > min_score, possible_loop))
 
 choosen_score = min(possible_loop)
 choosen_loop = possible_loop[choosen_score]
+choosen_loop_names = list(map(lambda personne: personne.name, choosen_loop))
 
-print(
-    f"The optimal order (score={choosen_score}) is:",
-    list(map(lambda personne: personne.name, choosen_loop))
-    )
+print(f"The optimal order (score={choosen_score}) is:", choosen_loop_names)
 
 print("Adding theses results to the history...")
 
 new_historique = update_historique(
     historique,
-    zip(choosen_loop, choosen_loop[1:] + choosen_loop[:1]),
+    zip(choosen_loop_names, choosen_loop_names[1:] + choosen_loop_names[:1]),
     annee
     )
 set_historique_for_year(new_historique, annee)

@@ -2,8 +2,6 @@ import json
 from typing import Iterable, Tuple, Dict, Union, List
 from copy import deepcopy
 
-from personne import Personne
-
 
 Annee = int
 Name = str
@@ -53,15 +51,15 @@ def get_historique_for_year(annee: Annee) -> Historique:
     return historique
 
 
-def update_historique(historique: Historique, exchanges: Iterable[Tuple[Personne, Personne]],
+def update_historique(historique: Historique, exchanges: Iterable[Tuple[Name, Name]],
                       annee: Annee) -> Historique:
     """
     Parameters
     ----------
     historique: Historique
         A previous history object to append from
-    exchanges: Iterable[Tuple[Personne, Personne]]
-        The list of new exchanges this year, as a tuple of giver and reaciver in that order
+    exchanges: Iterable[Tuple[Name, Name]]
+        The list of new exchanges this year, as a tuple of giver and reciver in that order
     annee: Annee
         The current year to register exchanges at
 
@@ -74,19 +72,18 @@ def update_historique(historique: Historique, exchanges: Iterable[Tuple[Personne
 
     for donneur, receveur in exchanges:
         gift_obj: Offert = {
-            "nom": receveur.name,
+            "nom": receveur,
             "année": annee,
         }
 
         for per_his in new_historique:
-            if per_his["nom"] == donneur.name:
+            if per_his["nom"] == donneur:
                 per_his["offerts"].append(gift_obj)
                 break
         else:
             historique.append({
-                "nom": donneur.name,
-                "black_list": donneur.black_list,
-                "offerts": [gift_obj]
+                "nom": donneur,
+                "offerts": [gift_obj],
             })
 
     return new_historique
