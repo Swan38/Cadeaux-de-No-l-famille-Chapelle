@@ -1,7 +1,7 @@
 from typing import List
 
 
-def ask_participants() -> List[str]:
+def ask_participants(historique) -> List[str]:
     while True:
         print("Qui participe cette année ?")
         participants = []
@@ -25,7 +25,7 @@ def ask_participants() -> List[str]:
 
             participants.append(participant)
 
-        print(f"Les participants pour l'année {année} seront :", participants)
+        print(f"Les participants seront :", participants)
 
         while True:
             reponse = input("Validez vous les participants cette année (oui/non) ? ")
@@ -36,7 +36,7 @@ def ask_participants() -> List[str]:
 
     return participants
 
-def hard_coded_participants() -> List[str]:
+def hard_coded_participants_2023() -> List[str]:
     return [
         "Valérie",
         "Aurore",

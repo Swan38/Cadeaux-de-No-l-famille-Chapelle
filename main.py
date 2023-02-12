@@ -6,11 +6,11 @@ from participation import *
 from personne import *
 
 
-# annee = hard_coded_year()
+# annee = 2023
 annee = ask_year()
 historique = get_historique_for_year(annee)
-# participants = hard_coded_participants()  # [:10]
-participants = ask_participants()
+# participants = hard_coded_participants_2023()  # [:10]
+participants = ask_participants(historique)
 
 participants_personnes = get_participant_personne_from_historique(participants, historique, annee)
 participants_personnes.sort(key=lambda personne: len(personne.black_list), reverse=True)

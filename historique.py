@@ -15,10 +15,6 @@ def ask_year() -> int:
             continue
 
 
-def hard_coded_year() -> int:
-    return 2023
-
-
 def get_historique_for_year(année: int):
     file_path = f"historique/historique_{année - 1}.json"
     print(f"Chargement de : {file_path}")
