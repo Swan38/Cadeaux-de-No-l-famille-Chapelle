@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from typing import Dict, Iterable, List
+from numbers import Number
 
 
 # Could be comparable to other personne or str
@@ -21,11 +22,20 @@ class Personne:
     #     return hash(self.name)
 
 
-def get_already_offered_score(personne_hist, participants: Iterable[str]) -> Dict["Personne", int]:
+def evaluate_score(offert, annee: int) -> Number:
+    if "année" in offert:
+        return 1 / (annee - offert["année"])
+    else:
+        return .1  # Equivalent to ten year
+
+
+def get_already_offered_score(personne_hist, participants: Iterable[str], annee: int) -> Dict["Personne", int]:
     already_offered_score = {participant: 0 for participant in participants if participant != personne_hist["nom"]}
     if "offerts" in personne_hist:
-        for personne_name in (set(map(lambda per_his: per_his["nom"], personne_hist["offerts"])) & set(participants)):
-            already_offered_score[personne_name] += 1
+        for offert in personne_hist["offerts"]:
+            if offert["nom"] not in participants:
+                continue
+            already_offered_score[offert["nom"]] += evaluate_score(offert, annee)
     return already_offered_score
 
 
@@ -36,21 +46,21 @@ def get_black_list(personne_hist, participants: Iterable[str]) -> List[str]:
         return []
 
 
-def get_participant_personne_from_historique(participants: Iterable[str], historique) -> List[Personne]:
+def get_participant_personne_from_historique(participants: Iterable[str], historique, annee: int) -> List[Personne]:
     personnes = []
     for participant in participants:
         for personne_hist in historique:
             if personne_hist["nom"] == participant:
                 personnes.append(Personne(
                     participant,
-                    get_already_offered_score(personne_hist, participants),
+                    get_already_offered_score(personne_hist, participants, annee),
                     get_black_list(personne_hist, participants)
                     ))
                 break
         else:
             personnes.append(Personne(
                 participant,
-                get_already_offered_score({"nom": participant}, participants),
+                get_already_offered_score({"nom": participant}, participants, annee),
                 get_black_list({"nom": participant}, participants)
                 ))
     return personnes

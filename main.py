@@ -6,11 +6,13 @@ from participation import *
 from personne import *
 
 
-annee = hard_coded_year()
+# annee = hard_coded_year()
+annee = ask_year()
 historique = get_historique_for_year(annee)
-participants = hard_coded_participants()  # [:10]
+# participants = hard_coded_participants()  # [:10]
+participants = ask_participants()
 
-participants_personnes = get_participant_personne_from_historique(participants, historique)
+participants_personnes = get_participant_personne_from_historique(participants, historique, annee)
 participants_personnes.sort(key=lambda personne: len(personne.black_list), reverse=True)
 
 # pprint(participants_personnes)
@@ -23,12 +25,9 @@ exploring_memory: Dict[int, Tuple[List[Personne], List[Personne]]] = {
 
 # While a better solution can steel be found
 while all(map(lambda possible_score: possible_score > min_score, possible_loop)):
-    if min_score not in exploring_memory:
-        min_score += 1
-        continue
-    elif len(exploring_memory[min_score]) == 0:
+    if len(exploring_memory[min_score]) == 0:
         del exploring_memory[min_score]
-        min_score += 1
+        min_score = min(exploring_memory)
         continue
 
     fixed: List[Personne]
