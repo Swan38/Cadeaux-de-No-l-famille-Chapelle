@@ -4,6 +4,19 @@ from historique import Historique
 
 
 def ask_participants(historique: Historique) -> List[str]:
+    """
+    Console asking to type participant's names.
+
+    Parameters
+    ----------
+    historique: Historique
+        Raw data from history
+
+    Return
+    ------
+    : List[str]
+        A list of the given participant's list
+    """
     while True:
         print("Qui participe cette année ?")
         participants = []
