@@ -2,6 +2,8 @@ from dataclasses import dataclass
 from typing import Dict, Iterable, List
 from numbers import Number
 
+from historique import Historique, PersonneHistorique, Offert, Annee
+
 
 # Could be comparable to other personne or str
 @dataclass  # (frozen=True)
@@ -22,14 +24,14 @@ class Personne:
     #     return hash(self.name)
 
 
-def evaluate_score(offert, annee: int) -> Number:
+def evaluate_score(offert: Offert, annee: Annee) -> Number:
     if "année" in offert:
         return 1 / (annee - offert["année"])
     else:
         return .1  # Equivalent to ten year
 
 
-def get_already_offered_score(personne_hist, participants: Iterable[str], annee: int) -> Dict["Personne", int]:
+def get_already_offered_score(personne_hist: PersonneHistorique, participants: Iterable[str], annee: int) -> Dict["Personne", int]:
     already_offered_score = {participant: 0 for participant in participants if participant != personne_hist["nom"]}
     if "offerts" in personne_hist:
         for offert in personne_hist["offerts"]:
@@ -39,14 +41,14 @@ def get_already_offered_score(personne_hist, participants: Iterable[str], annee:
     return already_offered_score
 
 
-def get_black_list(personne_hist, participants: Iterable[str]) -> List[str]:
+def get_black_list(personne_hist: PersonneHistorique, participants: Iterable[str]) -> List[str]:
     if "black_list" in personne_hist:
         return list(set(personne_hist["black_list"]) & set(participants))
     else:
         return []
 
 
-def get_participant_personne_from_historique(participants: Iterable[str], historique, annee: int) -> List[Personne]:
+def get_participant_personne_from_historique(participants: Iterable[str], historique: Historique, annee: Annee) -> List[Personne]:
     personnes = []
     for participant in participants:
         for personne_hist in historique:

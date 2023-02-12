@@ -1,7 +1,9 @@
 from typing import List
 
+from historique import Historique
 
-def ask_participants(historique) -> List[str]:
+
+def ask_participants(historique: Historique) -> List[str]:
     while True:
         print("Qui participe cette année ?")
         participants = []
