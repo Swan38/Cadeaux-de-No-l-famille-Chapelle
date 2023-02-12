@@ -6,7 +6,8 @@ from participation import *
 from personne import *
 
 
-historique = get_historique_for_year(hard_coded_year())
+annee = hard_coded_year()
+historique = get_historique_for_year(annee)
 participants = hard_coded_participants()  # [:10]
 
 participants_personnes = get_participant_personne_from_historique(participants, historique)
@@ -48,7 +49,19 @@ while all(map(lambda possible_score: possible_score > min_score, possible_loop))
                 exploring_memory[min_score + current_gift_score] = []
             exploring_memory[min_score + current_gift_score].append((fixed + [receveur], left[:i] + left[i + 1:]))
 
+choosen_score = min(possible_loop)
+choosen_loop = possible_loop[choosen_score]
+
 print(
-    f"The optimal order (score={min(possible_loop)}) is:",
-    list(map(lambda personne: personne.name, possible_loop[min(possible_loop)]))
+    f"The optimal order (score={choosen_score}) is:",
+    list(map(lambda personne: personne.name, choosen_loop))
     )
+
+print("Adding theses results to the history...")
+
+new_historique = update_historique(
+    historique,
+    zip(choosen_loop, choosen_loop[1:] + choosen_loop[:1]),
+    annee
+    )
+set_historique_for_year(new_historique, annee)

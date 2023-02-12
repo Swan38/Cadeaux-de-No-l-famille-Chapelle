@@ -1,0 +1,674 @@
+[
+    {
+        "nom": "Sidonie",
+        "offerts": [
+            {
+                "nom": "Jean-Luc",
+                "année": 2022
+            },
+            {
+                "nom": "Antonin"
+            },
+            {
+                "nom": "Julien"
+            },
+            {
+                "nom": "Aurore"
+            },
+            {
+                "nom": "Cyprien"
+            },
+            {
+                "nom": "Valérie"
+            },
+            {
+                "nom": "Geneviève",
+                "année": 2023
+            }
+        ]
+    },
+    {
+        "nom": "Antonin",
+        "black_list": [
+            "Jean-Luc",
+            "Valérie",
+            "Léonie"
+        ],
+        "offerts": [
+            {
+                "nom": "Julien"
+            },
+            {
+                "nom": "Agathe"
+            },
+            {
+                "nom": "Perine"
+            },
+            {
+                "nom": "Aurore"
+            },
+            {
+                "nom": "Cyprien"
+            },
+            {
+                "nom": "Cyprien"
+            },
+            {
+                "nom": "Sylvain"
+            },
+            {
+                "nom": "Jean-Paul"
+            },
+            {
+                "nom": "Geneviève"
+            },
+            {
+                "nom": "Jérôme",
+                "année": 2023
+            }
+        ]
+    },
+    {
+        "nom": "Julien",
+        "black_list": [
+            "Sylvain",
+            "Myriam",
+            "Perine",
+            "Aurore"
+        ],
+        "offerts": [
+            {
+                "nom": "Antonin"
+            },
+            {
+                "nom": "Camille"
+            },
+            {
+                "nom": "Cyprien"
+            },
+            {
+                "nom": "Valérie"
+            },
+            {
+                "nom": "Valérie"
+            },
+            {
+                "nom": "Jean-Luc"
+            },
+            {
+                "nom": "Jean-Luc"
+            },
+            {
+                "nom": "Célestine"
+            },
+            {
+                "nom": "Sidonie"
+            },
+            {
+                "nom": "Jean-Paul",
+                "année": 2023
+            }
+        ]
+    },
+    {
+        "nom": "Agathe",
+        "offerts": [
+            {
+                "nom": "Antonin"
+            },
+            {
+                "nom": "Antonin"
+            },
+            {
+                "nom": "Julien"
+            },
+            {
+                "nom": "Aurore"
+            },
+            {
+                "nom": "Sylvain"
+            },
+            {
+                "nom": "Jean-Luc"
+            },
+            {
+                "nom": "Jean-Paul"
+            },
+            {
+                "nom": "Geneviève"
+            },
+            {
+                "nom": "Rose"
+            },
+            {
+                "nom": "Perine",
+                "année": 2023
+            }
+        ]
+    },
+    {
+        "nom": "Perine",
+        "black_list": [
+            "Sylvain",
+            "Myriam",
+            "Julien",
+            "Aurore"
+        ],
+        "offerts": [
+            {
+                "nom": "Antonin"
+            },
+            {
+                "nom": "Agathe"
+            },
+            {
+                "nom": "Camille"
+            },
+            {
+                "nom": "Jean-Luc"
+            },
+            {
+                "nom": "Jean-Paul"
+            },
+            {
+                "nom": "Jean-Paul"
+            },
+            {
+                "nom": "Geneviève"
+            },
+            {
+                "nom": "Sidonie"
+            },
+            {
+                "nom": "Valérie",
+                "année": 2023
+            }
+        ]
+    },
+    {
+        "nom": "Aurore",
+        "black_list": [
+            "Sylvain",
+            "Myriam",
+            "Perine",
+            "Juilen"
+        ],
+        "offerts": [
+            {
+                "nom": "Antonin"
+            },
+            {
+                "nom": "Agathe"
+            },
+            {
+                "nom": "Agathe"
+            },
+            {
+                "nom": "Cyprien"
+            },
+            {
+                "nom": "Jérôme"
+            },
+            {
+                "nom": "Jean-Luc"
+            },
+            {
+                "nom": "Jean-Luc"
+            },
+            {
+                "nom": "Jean-Paul"
+            },
+            {
+                "nom": "Geneviève"
+            },
+            {
+                "nom": "Célestine"
+            },
+            {
+                "nom": "Sidonie",
+                "année": 2023
+            }
+        ]
+    },
+    {
+        "nom": "Camille",
+        "offerts": [
+            {
+                "nom": "Perine"
+            },
+            {
+                "nom": "Cyprien"
+            },
+            {
+                "nom": "Valérie"
+            },
+            {
+                "nom": "Sylvain"
+            },
+            {
+                "nom": "Jean-Luc"
+            },
+            {
+                "nom": "Jean-Paul"
+            },
+            {
+                "nom": "Geneviève"
+            },
+            {
+                "nom": "Léonie"
+            },
+            {
+                "nom": "Rose"
+            }
+        ]
+    },
+    {
+        "nom": "Cyprien",
+        "offerts": [
+            {
+                "nom": "Julien"
+            },
+            {
+                "nom": "Agathe"
+            },
+            {
+                "nom": "Perine"
+            },
+            {
+                "nom": "Camille"
+            },
+            {
+                "nom": "Valérie"
+            },
+            {
+                "nom": "Valérie"
+            },
+            {
+                "nom": "Valérie"
+            },
+            {
+                "nom": "Sylvain"
+            },
+            {
+                "nom": "Jean-Luc"
+            },
+            {
+                "nom": "Geneviève"
+            },
+            {
+                "nom": "Léonie"
+            },
+            {
+                "nom": "Antonin",
+                "année": 2023
+            }
+        ]
+    },
+    {
+        "nom": "Valérie",
+        "black_list": [
+            "Jean-Luc",
+            "Antonin",
+            "Léonie"
+        ],
+        "offerts": [
+            {
+                "nom": "Julien"
+            },
+            {
+                "nom": "Agathe"
+            },
+            {
+                "nom": "Perine"
+            },
+            {
+                "nom": "Camille"
+            },
+            {
+                "nom": "Camille"
+            },
+            {
+                "nom": "Cyprien"
+            },
+            {
+                "nom": "Jérôme"
+            },
+            {
+                "nom": "Jérôme"
+            },
+            {
+                "nom": "Jérôme"
+            },
+            {
+                "nom": "Sylvain"
+            },
+            {
+                "nom": "Jean-Paul"
+            },
+            {
+                "nom": "Geneviève"
+            },
+            {
+                "nom": "Geneviève"
+            },
+            {
+                "nom": "Sidonie"
+            },
+            {
+                "nom": "Bruno",
+                "année": 2023
+            }
+        ]
+    },
+    {
+        "nom": "Jérôme",
+        "offerts": [
+            {
+                "nom": "Antonin"
+            },
+            {
+                "nom": "Julien"
+            },
+            {
+                "nom": "Perine"
+            },
+            {
+                "nom": "Cyprien"
+            },
+            {
+                "nom": "Valérie"
+            },
+            {
+                "nom": "Sylvain"
+            },
+            {
+                "nom": "Jean-Luc"
+            },
+            {
+                "nom": "Jean-Luc"
+            },
+            {
+                "nom": "Jean-Paul"
+            },
+            {
+                "nom": "Geneviève"
+            },
+            {
+                "nom": "Léonie",
+                "année": 2023
+            }
+        ]
+    },
+    {
+        "nom": "Sylvain",
+        "black_list": [
+            "Myriam",
+            "Julien",
+            "Aurore",
+            "Perine"
+        ],
+        "offerts": [
+            {
+                "nom": "Antonin"
+            },
+            {
+                "nom": "Valérie"
+            },
+            {
+                "nom": "Jérôme"
+            },
+            {
+                "nom": "Jean-Luc"
+            },
+            {
+                "nom": "Jean-Paul"
+            },
+            {
+                "nom": "Jean-Paul"
+            },
+            {
+                "nom": "Geneviève"
+            },
+            {
+                "nom": "Geneviève"
+            },
+            {
+                "nom": "Léonie"
+            },
+            {
+                "nom": "Sidonie"
+            },
+            {
+                "nom": "Rose"
+            },
+            {
+                "nom": "Agathe",
+                "année": 2023
+            }
+        ]
+    },
+    {
+        "nom": "Jean-Luc",
+        "black_list": [
+            "Valérie",
+            "Antonin",
+            "Léonie"
+        ],
+        "offerts": [
+            {
+                "nom": "Julien"
+            },
+            {
+                "nom": "Agathe"
+            },
+            {
+                "nom": "Agathe"
+            },
+            {
+                "nom": "Perine"
+            },
+            {
+                "nom": "Camille"
+            },
+            {
+                "nom": "Camille"
+            },
+            {
+                "nom": "Cyprien"
+            },
+            {
+                "nom": "Jérôme"
+            },
+            {
+                "nom": "Sylvain"
+            },
+            {
+                "nom": "Jean-Paul"
+            },
+            {
+                "nom": "Geneviève"
+            },
+            {
+                "nom": "Geneviève"
+            },
+            {
+                "nom": "Sidonie"
+            },
+            {
+                "nom": "Aurore",
+                "année": 2023
+            }
+        ]
+    },
+    {
+        "nom": "Jean-Paul",
+        "black_list": [
+            "Geneviève"
+        ],
+        "offerts": [
+            {
+                "nom": "Julien"
+            },
+            {
+                "nom": "Agathe"
+            },
+            {
+                "nom": "Aurore"
+            },
+            {
+                "nom": "Camille"
+            },
+            {
+                "nom": "Valérie"
+            },
+            {
+                "nom": "Jérôme"
+            },
+            {
+                "nom": "Sylvain"
+            },
+            {
+                "nom": "Sylvain"
+            },
+            {
+                "nom": "Jean-Luc"
+            },
+            {
+                "nom": "Léonie"
+            },
+            {
+                "nom": "Célestine"
+            },
+            {
+                "nom": "Rose"
+            },
+            {
+                "nom": "Cyprien",
+                "année": 2023
+            }
+        ]
+    },
+    {
+        "nom": "Geneviève",
+        "black_list": [
+            "Jean-Paul"
+        ],
+        "offerts": [
+            {
+                "nom": "Perine"
+            },
+            {
+                "nom": "Aurore"
+            },
+            {
+                "nom": "Camille"
+            },
+            {
+                "nom": "Cyprien"
+            },
+            {
+                "nom": "Cyprien"
+            },
+            {
+                "nom": "Valérie"
+            },
+            {
+                "nom": "Valérie"
+            },
+            {
+                "nom": "Valérie"
+            },
+            {
+                "nom": "Jérôme"
+            },
+            {
+                "nom": "Jérôme"
+            },
+            {
+                "nom": "Sylvain"
+            },
+            {
+                "nom": "Jean-Luc"
+            },
+            {
+                "nom": "Sidonie"
+            },
+            {
+                "nom": "Rose"
+            },
+            {
+                "nom": "Julien",
+                "année": 2023
+            }
+        ]
+    },
+    {
+        "nom": "Léonie",
+        "black_list": [
+            "Jean-Luc",
+            "Valérie",
+            "Antonin"
+        ],
+        "offerts": [
+            {
+                "nom": "Julien"
+            },
+            {
+                "nom": "Perine"
+            },
+            {
+                "nom": "Jérôme"
+            },
+            {
+                "nom": "Geneviève"
+            },
+            {
+                "nom": "Célestine"
+            },
+            {
+                "nom": "Sylvain",
+                "année": 2023
+            }
+        ]
+    },
+    {
+        "nom": "Célestine",
+        "offerts": [
+            {
+                "nom": "Perine"
+            },
+            {
+                "nom": "Aurore"
+            },
+            {
+                "nom": "Valérie"
+            },
+            {
+                "nom": "Geneviève"
+            }
+        ]
+    },
+    {
+        "nom": "Rose",
+        "offerts": [
+            {
+                "nom": "Aurore"
+            },
+            {
+                "nom": "Valérie"
+            },
+            {
+                "nom": "Jean-Luc"
+            },
+            {
+                "nom": "Jean-Paul"
+            },
+            {
+                "nom": "Geneviève"
+            },
+            {
+                "nom": "Léonie"
+            }
+        ]
+    }
+]
