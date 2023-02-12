@@ -12,12 +12,16 @@ historique = get_historique_for_year(annee)
 # participants = hard_coded_participants_2023()  # [:10]
 participants = ask_participants(historique)
 
+# Convert history data to personne object for faster computation
 participants_personnes = get_participant_personne_from_historique(participants, historique, annee)
+# Sorting personnes from the one that has givent the most to the least, for faster resolution
 participants_personnes.sort(key=lambda personne: len(personne.black_list), reverse=True)
 
 # pprint(participants_personnes)
 
+# Dictionnary of the possibles loop as value of their total costs
 possible_loop: Dict[int, List[Personne]] = {}
+# Dictionnary of possibles loop exploration leads
 exploring_memory: Dict[int, Tuple[List[Personne], List[Personne]]] = {
     (min_score := 0): [
         ([participants_personnes[0]], participants_personnes[1:])
